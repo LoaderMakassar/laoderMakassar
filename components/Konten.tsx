@@ -31,7 +31,7 @@ interface FormData {
   message: string;
 }
 
-export default function LoaderLandingPage() {
+export default function Konten() {
   const [formData, setFormData] = useState<FormData>({
     name: '',
     email: '',

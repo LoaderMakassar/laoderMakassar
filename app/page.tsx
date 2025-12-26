@@ -1,8 +1,8 @@
-import HomeScreen from "@/components/HomeScreen";
+import Konten from "@/components/Konten";
 export default function Home() {
   return (
     <div>
-      <HomeScreen />
+      <Konten />
     </div>
   );
 }
