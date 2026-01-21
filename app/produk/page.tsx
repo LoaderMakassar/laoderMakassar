@@ -1,3 +1,4 @@
+"use client"
 import Backhoe from '@/components/BackHoe'
 import ConcratePump from '@/components/ConcratePump'
 import ConcratePumpMix from '@/components/conmix'
@@ -12,17 +13,21 @@ import Sugarcane from '@/components/Sugarcane'
 import WheelDump from '@/components/WheelDum'
 import WheelExa from '@/components/WheelExavator'
 import WheelTracktor from '@/components/WheelTraktor'
-import React from 'react'
-const scrollToContact = () => {
-  const phoneNumber = '6289519486934'; // tanpa +
-  const message = 'Halo, saya mau tanya produk';
 
-  const url = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
-  window.open(url, '_blank');
-};
 export default function produk() {
+  const scrollToContact = () => {
+    const phoneNumber = '6289519486934'; // tanpa +
+    const message = 'Halo, saya mau tanya produk';
+
+    const url = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
+    window.open(url, '_blank');
+  };
   return (
+
+
     <div className='bg-white ' >
+
+
       <nav className="fixed top-0 w-full bg-white/95 backdrop-blur-sm shadow-sm z-50">
         <div className="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
           <div className="text-2xl font-bold text-slate-900">
@@ -36,7 +41,9 @@ export default function produk() {
           </button>
         </div>
       </nav>
-      <div className='p-5'>
+
+
+      <div className='p-5 pt-20'>
         <div className='mt-10 mb-10 '>
           <h1 className="text-3xl md:text-4xl font-bold text-gray-800 tracking-wide mb-4">
             Wheel Loader <span className="text-yellow-500">SYZG</span>
@@ -136,7 +143,7 @@ export default function produk() {
       </div>
 
       {/* footer */}
-      <div className=' top-890  left-0 right-0 bottom-0'>
+      <div className=' '>
         <footer className="bg-slate-950 text-gray-400 py-12 px-6 ">
           <div className="max-w-7xl mx-auto">
             <div className="grid md:grid-cols-4 gap-8 mb-8">
