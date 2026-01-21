@@ -16,8 +16,8 @@ const teamData: TeamMember[] = [
     id: 1,
     name: "Andi Ismail",
     role: "Manajer Penjualan",
-    image: "/team/andis.pn",
-    bio: "Kepala Penjualan PT BGDMI Sektor Makassar.",
+    image: "/team/andis.jpeg",
+    bio: "Kepala Penjualan PT BDMI.",
   },
 
 ]
@@ -25,9 +25,9 @@ const teamData: TeamMember[] = [
 export default function Team(): JSX.Element {
   return (
     <section className="py-20 px-6 max-w-7xl mx-auto">
-      <h2 className="text-3xl font-bold text-center mb-12 text-black">
+      {/* <h2 className="text-3xl font-bold text-center mb-12 text-black">
         Our Team
-      </h2>
+      </h2> */}
 
       <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-1 gap-8">
         {teamData.map((member) => (
@@ -46,7 +46,7 @@ export default function Team(): JSX.Element {
               />
             </div>
 
-            <h3 className="text-xl font-semibold text-black">
+            <h3 className="text-2xl font-semibold text-black">
               {member.name}
             </h3>
             <p className="text-sm text-black mb-2">

@@ -1,5 +1,6 @@
 'use client';
 
+import ChatsPublik from '@/components/chatPublik';
 import LGMA from '@/components/LGMA';
 import Lugong from '@/components/Lugong';
 import Forklift from '@/components/modal';
@@ -200,11 +201,11 @@ export default function Konten() {
               </button>
               <button className="border-2 border-slate-300 text-slate-700 px-8 py-4 rounded-lg hover:border-orange-600 hover:text-orange-600 transition-all font-semibold text-lg">
                 <a
-                  href="/"
-                  download
+                  href="/Gallery"
+
                   className="px-4 py-2 text-black rounded"
                 >
-                  Lihat Katalog
+                  Gallery
                 </a>
               </button>
             </div>
@@ -285,17 +286,12 @@ export default function Konten() {
           <div className='mt-10 mb-10'>
             <Forklift />
           </div>
-          <div className='mt-10 mb-10'>
-            <Lugong/>
-          </div>
-          <div className='mt-10 mb-10'>
-            <LGMA/>
-          </div>
+
           <div>
             <button className="border-2 border-slate-300 text-slate-700 px-8 py-4 rounded-lg hover:border-orange-600 hover:text-orange-600 transition-all font-semibold text-lg">
               <a
                 href="/produk"
-            
+
               >
                 Lihat Selengkapnya
               </a>
@@ -371,62 +367,7 @@ export default function Konten() {
             </p>
           </div>
 
-          <form onSubmit={handleSubmit} className="bg-white/5 backdrop-blur-sm p-8 rounded-2xl border border-white/10">
-            <div className="grid md:grid-cols-2 gap-6 mb-6">
-              <input
-                type="text"
-                name="name"
-                value={formData.name}
-                onChange={handleChange}
-                placeholder="Nama Lengkap *"
-                required
-                className="px-4 py-3 rounded-lg bg-white/10 border border-white/20 text-white placeholder-gray-400 focus:outline-none focus:border-orange-400 transition-colors"
-              />
-              <input
-                type="email"
-                name="email"
-                value={formData.email}
-                onChange={handleChange}
-                placeholder="Email *"
-                required
-                className="px-4 py-3 rounded-lg bg-white/10 border border-white/20 text-white placeholder-gray-400 focus:outline-none focus:border-orange-400 transition-colors"
-              />
-            </div>
-            <div className="grid md:grid-cols-2 gap-6 mb-6">
-              <input
-                type="tel"
-                name="phone"
-                value={formData.phone}
-                onChange={handleChange}
-                placeholder="Nomor Telepon *"
-                required
-                className="px-4 py-3 rounded-lg bg-white/10 border border-white/20 text-white placeholder-gray-400 focus:outline-none focus:border-orange-400 transition-colors"
-              />
-              <input
-                type="text"
-                name="company"
-                value={formData.company}
-                onChange={handleChange}
-                placeholder="Nama Perusahaan"
-                className="px-4 py-3 rounded-lg bg-white/10 border border-white/20 text-white placeholder-gray-400 focus:outline-none focus:border-orange-400 transition-colors"
-              />
-            </div>
-            <textarea
-              name="message"
-              value={formData.message}
-              onChange={handleChange}
-              placeholder="Ceritakan kebutuhan proyek Anda *"
-              required
-              rows={5}
-              className="w-full px-4 py-3 rounded-lg bg-white/10 border border-white/20 text-white placeholder-gray-400 focus:outline-none focus:border-orange-400 transition-colors resize-none mb-6"
-            />
-            <button
-              type="submit"
-              className="w-full bg-orange-600 text-white py-4 rounded-lg hover:bg-orange-700 transition-colors font-semibold text-lg shadow-lg"
-            >
-              Kirim Pesan
-            </button>
-          </form>
+          <ChatsPublik />
         </div>
       </section>
 
