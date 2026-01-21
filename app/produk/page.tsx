@@ -1,73 +1,120 @@
 import Backhoe from '@/components/BackHoe'
+import ConcratePump from '@/components/ConcratePump'
+import ConcratePumpMix from '@/components/conmix'
 import Excavator from '@/components/Excavator'
 import Forklift from '@/components/Forklift'
 import LGMA from '@/components/LGMA'
 import Lugong from '@/components/Lugong'
+import MiniDumper from '@/components/MiniDumper'
 import WheelLoaderTable from '@/components/modal'
 import SelfLoadingConcrete from '@/components/SelfLoadingConcrete'
+import Sugarcane from '@/components/Sugarcane'
+import WheelDump from '@/components/WheelDum'
 import WheelExa from '@/components/WheelExavator'
+import WheelTracktor from '@/components/WheelTraktor'
 import React from 'react'
 
 export default function produk() {
   return (
     <div className='bg-white ' >
-    <div className='p-5'>
+      <div className='p-5'>
         <div className='mt-10 mb-10 '>
-        <h1 className="text-3xl md:text-4xl font-bold text-gray-800 tracking-wide mb-4">
-          Wheel Loader <span className="text-yellow-500">SYZG</span>
-        </h1>
-        <WheelLoaderTable />
-      </div>
-      <div className='mt-10 mb-10'>
-        <h1 className="text-3xl md:text-4xl font-bold text-gray-800 tracking-wide mb-4">
-          Wheel Loader <span className="text-yellow-500">LUGONG</span>
-        </h1>
-        <Lugong />
-      </div>
-      <div className='mt-10 mb-10'>
-        <h1 className="text-3xl md:text-4xl font-bold text-gray-800 tracking-wide mb-4">
-          Wheel Loader <span className="text-yellow-500">LGMA</span>
-        </h1>
-        <LGMA />
-      </div>
-  
-      <div className='mt-10 mb-10'>
-        <h1 className="text-3xl md:text-4xl font-bold text-gray-800 tracking-wide mb-4">
-          Wheel Loader <span className="text-yellow-500">BACKHOE</span>
-        </h1>
-        <Backhoe/>
-      </div>
+          <h1 className="text-3xl md:text-4xl font-bold text-gray-800 tracking-wide mb-4">
+            Wheel Loader <span className="text-yellow-500">SYZG</span>
+          </h1>
+          <WheelLoaderTable />
+        </div>
+        <div className='mt-10 mb-10'>
+          <h1 className="text-3xl md:text-4xl font-bold text-gray-800 tracking-wide mb-4">
+            Wheel Loader <span className="text-yellow-500">LUGONG</span>
+          </h1>
+          <Lugong />
+        </div>
+        <div className='mt-10 mb-10'>
+          <h1 className="text-3xl md:text-4xl font-bold text-gray-800 tracking-wide mb-4">
+            Wheel Loader <span className="text-yellow-500">LGMA</span>
+          </h1>
+          <LGMA />
+        </div>
 
-      <div className='mt-10 mb-10'>
-        <h1 className="text-3xl md:text-4xl font-bold text-gray-800 tracking-wide mb-4">
-          Rough Terrain<span className="text-yellow-500"> Forklift</span>
-        </h1>
-        <Forklift/>
+        <div className='mt-10 mb-10'>
+          <h1 className="text-3xl md:text-4xl font-bold text-gray-800 tracking-wide mb-4">
+            Wheel Loader <span className="text-yellow-500">BACKHOE</span>
+          </h1>
+          <Backhoe />
+        </div>
+
+        <div className='mt-10 mb-10'>
+          <h1 className="text-3xl md:text-4xl font-bold text-gray-800 tracking-wide mb-4">
+            Rough Terrain<span className="text-yellow-500"> Forklift</span>
+          </h1>
+          <Forklift />
+        </div>
+
+        <div className='mt-10 mb-10'>
+          <h1 className="text-3xl md:text-4xl font-bold text-gray-800 tracking-wide mb-4">
+            Rough Terrain<span className="text-yellow-500"> Forklift</span>
+          </h1>
+          <Excavator />
+        </div>
+
+        <div className='mt-10 mb-10'>
+          <h1 className="text-3xl md:text-4xl font-bold text-gray-800 tracking-wide mb-4">
+            Wheel Excacator<span className="text-yellow-500"> BD-9075W</span>
+          </h1>
+          <WheelExa />
+        </div>
+
+        <div className='mt-10 mb-10'>
+          <h1 className="text-3xl md:text-4xl font-bold text-gray-800 tracking-wide mb-4">
+            Self Loading<span className="text-yellow-500"> Concrete Mixer</span>
+          </h1>
+          <SelfLoadingConcrete />
+        </div>
+
+        <div className='mt-10 mb-10'>
+          <h1 className="text-3xl md:text-4xl font-bold text-gray-800 tracking-wide mb-4">
+            Concrete<span className="text-yellow-500"> Pump</span>
+          </h1>
+          <ConcratePump />
+        </div>
+
+        <div className='mt-10 mb-10'>
+          <h1 className="text-3xl md:text-4xl font-bold text-gray-800 tracking-wide mb-4">
+            Concrete Mixer <span className="text-yellow-500"> Pump JBT40 - 450R</span>
+          </h1>
+          <ConcratePumpMix />
+        </div>
+
+        <div className='mt-10 mb-10'>
+          <h1 className="text-3xl md:text-4xl font-bold text-gray-800 tracking-wide mb-4">
+            Wheel <span className="text-yellow-500"> Tracktor</span>
+          </h1>
+          <WheelTracktor />
+        </div>
+
+        <div className='mt-10 mb-10'>
+          <h1 className="text-3xl md:text-4xl font-bold text-gray-800 tracking-wide mb-4">
+            Mini Dumper <span className="text-yellow-500"> Crawler</span>
+          </h1>
+          <MiniDumper />
+        </div>
+
+        <div className='mt-10 mb-10'>
+          <h1 className="text-3xl md:text-4xl font-bold text-gray-800 tracking-wide mb-4">
+            Sugarcane <span className="text-yellow-500"> Loader QZ7600</span>
+          </h1>
+          <Sugarcane />
+        </div>
+
+        <div className='mt-10 mb-10'>
+          <h1 className="text-3xl md:text-4xl font-bold text-gray-800 tracking-wide mb-4">
+            Wheel Dumper <span className="text-yellow-500"> BD15</span>
+          </h1>
+          <WheelDump/>
+        </div>
+
       </div>
-
-      <div className='mt-10 mb-10'>
-        <h1 className="text-3xl md:text-4xl font-bold text-gray-800 tracking-wide mb-4">
-          Rough Terrain<span className="text-yellow-500"> Forklift</span>
-        </h1>
-        <Excavator/>
-      </div>
-
-      <div className='mt-10 mb-10'>
-        <h1 className="text-3xl md:text-4xl font-bold text-gray-800 tracking-wide mb-4">
-          Wheel Excacator<span className="text-yellow-500"> BD-9075W</span>
-        </h1>
-        <WheelExa/>
-      </div>
-
-      <div className='mt-10 mb-10'>
-        <h1 className="text-3xl md:text-4xl font-bold text-gray-800 tracking-wide mb-4">
-          Self Loading<span className="text-yellow-500"> Concrete Mixer</span>
-        </h1>
-        <SelfLoadingConcrete/>
-      </div>
-
-
-    </div>
 
       {/* footer */}
       <div className=' top-890  left-0 right-0 bottom-0'>

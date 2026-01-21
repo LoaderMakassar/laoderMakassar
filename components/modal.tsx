@@ -198,7 +198,7 @@ export default function WheelLoaderTable() {
           src="/images/gambar_2.png"
           alt="Wheel Loader SYZG"
           fill
-          className="object-cover rounded-md"
+          className="object-contain rounded-md"
           priority
         />
       </div>
