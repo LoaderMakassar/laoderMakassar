@@ -1,4 +1,9 @@
 'use client';
+
+import LGMA from '@/components/LGMA';
+import Lugong from '@/components/Lugong';
+import Forklift from '@/components/modal';
+import Team from '@/components/Team';
 import { useState, FormEvent } from 'react';
 
 interface Feature {
@@ -37,7 +42,7 @@ export default function Konten() {
     company: '',
     message: ''
   });
-
+  const [openmodal, setOpenmodal] = useState(false)
   const features: Feature[] = [
     {
       icon: '⚙️',
@@ -61,6 +66,9 @@ export default function Konten() {
     }
   ];
 
+  const openModal = () => {
+    setOpenmodal(!openModal)
+  }
   const specs: Spec[] = [
     { value: '250', label: 'Tenaga Mesin', unit: 'HP' },
     { value: '5.0', label: 'Kapasitas Bucket', unit: 'm³' },
@@ -127,6 +135,8 @@ export default function Konten() {
     }
   ];
 
+
+
   const handleSubmit = (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     alert('Terima kasih atas minat Anda. Tim kami akan menghubungi Anda dalam 1x24 jam.');
@@ -166,6 +176,8 @@ export default function Konten() {
         </div>
       </nav>
 
+
+
       {/* Hero Section */}
       <section className="relative pt-32 pb-20 px-6 bg-gradient-to-br from-slate-50 to-orange-50">
         <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-12 items-center">
@@ -187,7 +199,13 @@ export default function Konten() {
                 Konsultasi Gratis
               </button>
               <button className="border-2 border-slate-300 text-slate-700 px-8 py-4 rounded-lg hover:border-orange-600 hover:text-orange-600 transition-all font-semibold text-lg">
-                Lihat Katalog
+                <a
+                  href="/"
+                  download
+                  className="px-4 py-2 text-black rounded"
+                >
+                  Lihat Katalog
+                </a>
               </button>
             </div>
           </div>
@@ -231,7 +249,7 @@ export default function Konten() {
               Pilihan loader dengan berbagai kapasitas untuk memenuhi kebutuhan proyek Anda
             </p>
           </div>
-          <div className="grid md:grid-cols-3 gap-8">
+          {/* <div className="grid md:grid-cols-3 gap-8">
             {products.map((product, index) => (
               <div
                 key={index}
@@ -263,6 +281,25 @@ export default function Konten() {
                 </div>
               </div>
             ))}
+          </div> */}
+          <div className='mt-10 mb-10'>
+            <Forklift />
+          </div>
+          <div className='mt-10 mb-10'>
+            <Lugong/>
+          </div>
+          <div className='mt-10 mb-10'>
+            <LGMA/>
+          </div>
+          <div>
+            <button className="border-2 border-slate-300 text-slate-700 px-8 py-4 rounded-lg hover:border-orange-600 hover:text-orange-600 transition-all font-semibold text-lg">
+              <a
+                href="/produk"
+            
+              >
+                Lihat Selengkapnya
+              </a>
+            </button>
           </div>
         </div>
       </section>
@@ -322,6 +359,7 @@ export default function Konten() {
           </div>
         </div>
       </section> */}
+      <Team />
 
       {/* Contact Section */}
       <section id="contact" className="py-24 px-6 bg-gradient-to-br from-slate-900 to-slate-800 text-white">
