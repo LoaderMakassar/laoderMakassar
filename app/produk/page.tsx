@@ -13,10 +13,29 @@ import WheelDump from '@/components/WheelDum'
 import WheelExa from '@/components/WheelExavator'
 import WheelTracktor from '@/components/WheelTraktor'
 import React from 'react'
+const scrollToContact = () => {
+  const phoneNumber = '6289519486934'; // tanpa +
+  const message = 'Halo, saya mau tanya produk';
 
+  const url = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
+  window.open(url, '_blank');
+};
 export default function produk() {
   return (
     <div className='bg-white ' >
+      <nav className="fixed top-0 w-full bg-white/95 backdrop-blur-sm shadow-sm z-50">
+        <div className="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+          <div className="text-2xl font-bold text-slate-900">
+            <span className="text-orange-600">Big Dipper </span> Machinery Makassar
+          </div>
+          <button
+            onClick={scrollToContact}
+            className="bg-orange-600 text-white px-6 py-2 rounded-lg hover:bg-orange-700 transition-colors font-medium"
+          >
+            Hubungi Kami
+          </button>
+        </div>
+      </nav>
       <div className='p-5'>
         <div className='mt-10 mb-10 '>
           <h1 className="text-3xl md:text-4xl font-bold text-gray-800 tracking-wide mb-4">
@@ -111,7 +130,7 @@ export default function produk() {
           <h1 className="text-3xl md:text-4xl font-bold text-gray-800 tracking-wide mb-4">
             Wheel Dumper <span className="text-yellow-500"> BD15</span>
           </h1>
-          <WheelDump/>
+          <WheelDump />
         </div>
 
       </div>
