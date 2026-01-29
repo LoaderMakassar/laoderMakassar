@@ -8,6 +8,7 @@ import LGMA from '@/components/LGMA'
 import Lugong from '@/components/Lugong'
 import MiniDumper from '@/components/MiniDumper'
 import WheelLoaderTable from '@/components/modal'
+import NewP from '@/components/NewP'
 import SelfLoadingConcrete from '@/components/SelfLoadingConcrete'
 import Sugarcane from '@/components/Sugarcane'
 import WheelDump from '@/components/WheelDum'
@@ -138,6 +139,13 @@ export default function produk() {
             Wheel Dumper <span className="text-yellow-500"> BD15</span>
           </h1>
           <WheelDump />
+        </div>
+
+        <div className='mt-10 mb-10'>
+          <h1 className="text-3xl md:text-4xl font-bold text-gray-800 tracking-wide mb-4">
+             <span className="text-yellow-500"> </span>
+          </h1>
+          <NewP/>
         </div>
 
       </div>
