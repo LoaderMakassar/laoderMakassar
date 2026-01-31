@@ -1,5 +1,7 @@
 import { MetadataRoute } from "next";
 
+export const dynamic = "force-static"; // ⬅️ TAMBAHKAN INI
+
 export default function sitemap(): MetadataRoute.Sitemap {
   return [
     {
