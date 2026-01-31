@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import "./globals.css";
+import Script from "next/script";
 
 
 
@@ -27,8 +28,39 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <head>
+         <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "Organization",
+              name: "loader makassar",
+              url: "https://loadermakassar.id",
+              description:
+                "Jual Alat berat",
+            }),
+          }}
+        />
+        <meta name="google-site-verification" content="cqQFV7NinnW87NZrQHXbJs8y7UvbfzKij1PLjM59qH0" />
+      </head>
       <body>
         {children}
+
+        <Script
+          src="https://www.googletagmanager.com/gtag/js?id=G-4V5BNXBJJ5"
+          strategy="afterInteractive"
+        />
+        <Script>
+          {
+            `  window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+
+          gtag('config', 'G-4V5BNXBJJ5');`
+          }
+
+        </Script>
       </body>
     </html>
   );
