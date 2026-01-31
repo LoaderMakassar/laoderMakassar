@@ -290,7 +290,7 @@ export default function Konten() {
           <div>
             <button className="border-2 border-slate-300 text-slate-700 px-8 py-4 rounded-lg hover:border-orange-600 hover:text-orange-600 transition-all font-semibold text-lg">
               <a
-                href="/produk"
+                href="/jual-alat-berat-makassar"
 
               >
                 Lihat Selengkapnya
