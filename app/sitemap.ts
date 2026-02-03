@@ -13,7 +13,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
       lastModified: new Date(),
     },
     {
-      url: "https://loadermakassar.id/produk",
+      url: "https://loadermakassar.id/jual-alat-berat-makassar",
       lastModified: new Date(),
     },
   ];
