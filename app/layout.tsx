@@ -5,22 +5,25 @@ import Script from "next/script";
 
 
 export const metadata: Metadata = {
-title: 'Jual Alat Berat Makassar | Loader, Excavator & Bulldozer',
-description: 'Jual alat berat Makassar meliputi loader, excavator, bulldozer baru & bekas. Harga bersaing, kualitas terjamin, siap kirim.',
-keywords: [
-  'jual alat berat makassar',
-  'loader makassar',
-  'jual loader makassar',
-  'excavator makassar',
-  'jual excavator makassar',
-  'bulldozer makassar',
-  'supplier alat berat makassar',
-],
-icons: {
-  icon: '/favicon-16x16.png',
-  shortcut: '/favicon-16x16.png',
-  apple: '/apple-touch-icon.png',
-},
+  title: 'Jual Alat Berat Makassar | Loader, Excavator & Lugong',
+  description: 'Jual alat berat Makassar meliputi loader, excavator, lugong baru. Harga bersaing, kualitas terjamin, siap kirim.',
+  keywords: [
+    'jual alat berat lugong makassar',
+    'loader makassar',
+    "Wheel Loader",
+    "Self Loading Mixer",
+    "Excavator",
+    'jual loader makassar',
+    'excavator makassar',
+    'jual excavator makassar',
+    'Lugong makassar',
+    'supplier alat berat makassar',
+  ],
+  icons: {
+    icon: '/favicon-16x16.png',
+    shortcut: '/favicon-16x16.png',
+    apple: '/apple-touch-icon.png',
+  },
 
 };
 
@@ -32,7 +35,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
-         <script
+        <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
             __html: JSON.stringify({
